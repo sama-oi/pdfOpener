@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Viewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="file-upload">
+            <input type="file" id="pdf-upload" accept="application/pdf" />
+            <button onclick="openPDF()">Open PDF</button>
+        </div>
+
+        <div class="pdf-container" id="pdf-container">
+            <div id="pdf-wrapper">
+                <canvas class="pdf-page" id="pdf-canvas"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #49bfee; /* Sky Blue Background */
+    color: #333; /* Dark text for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #0000001a;
+    width: 90%;
+    max-width: 1000px;
+}
+
+.file-upload {
+    margin-bottom: 20px;
+}
+
+#pdf-upload {
+    display: inline-block;
+    padding: 10px;
+    background-color: #4682B4; /* Sky Blue */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#pdf-upload:hover {
+    background-color: #5a9bd5;
+}
+
+button {
+    background-color: #4682B4; /* Sky Blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #5a9bd5;
+}
+
+.pdf-container {
+    width: 100%;
+    height: 600px;
+    background-color: #f0f8ff; /* Light sky blue background for container */
+    overflow-y: scroll;
+    padding: 10px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.pdf-page {
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
